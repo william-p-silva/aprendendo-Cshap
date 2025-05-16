@@ -17,6 +17,7 @@ namespace aprendendo
             Random random = new Random();
             List<int> certo = new List<int>();
             List<int> errado = new List<int>();
+            
             while (true)
             {
                 while (!entradaValida)
