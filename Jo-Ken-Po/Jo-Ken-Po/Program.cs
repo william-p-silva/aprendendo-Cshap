@@ -101,6 +101,7 @@ namespace Jo_Ken_Po
             {
                 Console.WriteLine($"{opcoes[er - 1]};");
             }
+            Console.WriteLine($"\n\nVocê jogou {acertos + empates + erros} vezes)");
             Console.ReadLine();
         }
     }
