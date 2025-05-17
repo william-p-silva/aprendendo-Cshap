@@ -55,27 +55,36 @@ namespace Jo_Ken_Po
                 int computador = random.Next(1, 4);
                 if (computador == jogadorInt)
                 {
+                    Console.BackgroundColor = ConsoleColor.Yellow;
+                    Console.ForegroundColor = ConsoleColor.Black;
                     Console.WriteLine("\nEmpate");
                     Console.WriteLine($"Você escolhe {opcoes[jogadorInt - 1]}");
                     Console.WriteLine($"O Computador escolheu {opcoes[computador - 1]}\n");
                     empate.Add(jogadorInt);
                     empates++;
+                    Console.ResetColor();
                 }
                 else if (jogadorInt == 1 && computador == 2 || jogadorInt == 2 && computador == 3 || jogadorInt == 3 && computador == 1)
                 {
+                    Console.BackgroundColor = ConsoleColor.Red;
+                    Console.ForegroundColor = ConsoleColor.Black;
                     Console.WriteLine("\nVocê perdeu!");
                     Console.WriteLine($"Você escolhe {opcoes[jogadorInt - 1]}");
                     Console.WriteLine($"O Computador escolheu {opcoes[computador - 1]}\n");
                     errados.Add(jogadorInt);
                     erros++;
+                    Console.ResetColor();
                 }
                 else
                 {
+                    Console.BackgroundColor = ConsoleColor.Green;
+                    Console.ForegroundColor = ConsoleColor.Black;
                     Console.WriteLine("\n\nVocê Ganhou!!!!!!\n");
                     Console.WriteLine($"Você escolhe {opcoes[jogadorInt - 1]}");
                     Console.WriteLine($"O Computador escolheu {opcoes[computador - 1]}\n");
                     certos.Add(jogadorInt);
                     acertos++;
+                    Console.ResetColor();
                 }
                     escolhaValida = false;
             }
