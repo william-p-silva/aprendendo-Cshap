@@ -14,6 +14,7 @@ namespace teste
             Apresentação();
             num = float.Parse(Console.ReadLine());
             Operações(num);
+            Console.ReadLine();
         }
 
         static void Apresentação()
@@ -27,7 +28,7 @@ namespace teste
             Console.WriteLine($"O dobro do número {n} é {n * 2}");
             Console.WriteLine($"A metade do número {n} é {n / 2}");
             Console.WriteLine($"O quadrado do número {n} é {n * n}");
-            Console.WriteLine($"A raiz quadrada do número {n} é {Math.Sqrt(n)}");
+            Console.WriteLine($"A raiz quadrada do número {n} é {Math.Sqrt(n)}");//Modulos parecidos com os do python (TEM MATH)
             Console.WriteLine($"10% do número {n} é {n * 0.10}");
         }
     }
