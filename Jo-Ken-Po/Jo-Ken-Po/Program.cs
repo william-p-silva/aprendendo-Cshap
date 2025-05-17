@@ -83,13 +83,24 @@ namespace Jo_Ken_Po
             Console.WriteLine();
             Console.WriteLine("================================================================================================================================================================================================");
             Console.WriteLine();
-            Console.WriteLine($"Você gamhou {acertos} vezes");
-            Console.WriteLine("Com as escolhas: ");
+            Console.WriteLine($"Você ganhou {acertos} veze(s)");
+            Console.WriteLine("Com as escolha(s): ");
             foreach (int c in certos)
             {
-                Console.WriteLine($"{opcoes[c-1]}");
+                Console.WriteLine($"{opcoes[c-1]};");
             }
-
+            Console.WriteLine($"\nVocê empatou {empates} veze(s)");
+            Console.WriteLine("Com as escolha(s): ");
+            foreach (int e in empate)
+            {
+                Console.WriteLine($"{opcoes[e - 1]};");
+            }
+            Console.WriteLine($"\nVocê perdeu {erros} veze(s)");
+            Console.WriteLine("Com as escolha(s): ");
+            foreach (int er in errados)
+            {
+                Console.WriteLine($"{opcoes[er - 1]};");
+            }
             Console.ReadLine();
         }
     }
