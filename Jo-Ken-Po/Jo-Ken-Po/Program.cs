@@ -12,6 +12,7 @@ namespace Jo_Ken_Po
         {
             Random random = new Random();
             List<int> certos = new List<int>();
+
             int acertos = 0;
             List<int> errados = new List<int>();
             int erros = 0;
